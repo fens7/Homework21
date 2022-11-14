@@ -6,7 +6,7 @@ const commentsContainer = document.querySelector('.comments-container');
 function getPost() {
     showPostBtn.addEventListener('click', async() => {
         const inputValue = input.value;
-        const response = await fetch(`https://jsonplaceholder.typicode.com/postseq/${inputValue}qeeqeq`)
+        const response = await fetch(`https://jsonplaceholder.typicode.com/postseq/${inputValue}`)
         const data = await response.json()
             if (data.id) {
                 postContainer.innerHTML = `
